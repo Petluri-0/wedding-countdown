@@ -62,32 +62,37 @@ body {
     text-align: center;
 }
 @media (max-width: 600px) {
-  
-    #countdown-container span {
-        font-size: 2.5rem; /* Shrink the numbers slightly so they fit */
-    }
-
-    h1 {
-        font-size: 1.8rem; /* Make the heading smaller for mobile */
-        padding: 0 10px;
-    }
-    
     body {
-        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('engagement-mobile.jpg');
-    
-        /* This forces the photo to be exactly as wide as the phone screen */
-        background-size: 100% auto; 
-    
-        /* This keeps it at the top so it doesn't leave a gap above the heading */
+        /* The Fade: Transparent at top, solid black at the bottom */
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%), url('engagement-mobile.jpg');
+        background-size: 100% auto;
         background-position: top center;
-    
-        /* Ensure the background color matches the photo's edge so it looks seamless */
-        background-color: #000; 
+        background-color: #000;
         background-repeat: no-repeat;
+        
+        /* Push content to the bottom so it sits in the black area */
+        justify-content: flex-end;
+        padding-bottom: 40px;
     }
 
     #countdown-container {
-        flex-direction: column;
+        /* Back to horizontal! */
+        flex-direction: row; 
         gap: 15px;
+        padding: 10px;
+    }
+
+    #countdown-container span {
+        font-size: 1.8rem; /* Smaller font to fit 4 columns on one line */
+    }
+
+    #countdown-container p {
+        font-size: 0.6rem; /* Smaller labels */
+        letter-spacing: 1px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
     }
 }
