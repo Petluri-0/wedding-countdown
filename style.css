@@ -62,7 +62,8 @@ body {
     text-align: center;
 }
 @media (max-width: 600px) {
-    body {
+    body 
+    {
         /* Re-confirming these to be safe */
         display: flex;
         flex-direction: column;
@@ -81,7 +82,7 @@ body {
 
         /* This pushes the content-wrapper specifically */
         justify-content: flex-end; 
-        padding-bottom: 110px; 
+        padding-bottom: 150px; 
     }
 
     /* Target the wrapper we made earlier to ensure it's visible */
