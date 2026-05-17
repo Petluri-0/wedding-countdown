@@ -66,11 +66,14 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center; 
+        /* This pushes the content-wrapper to the bottom of the screen */
+        justify-content: flex-end; 
         
-        background-image: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 85%), url('engagement-mobile.jpg');
+        /* Using a simpler gradient since the image is now centered */
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, rgba(0,0,0,0.5)), url('engagement-mobile.jpg');
         background-size: 100% auto;
-        background-position: top center;
+        /* This is the key change for the centered letterbox look */
+        background-position: center center;
         background-color: #000;
         background-repeat: no-repeat;
 
@@ -78,26 +81,29 @@ body {
         height: 100vh;
         width: 100%;
         margin: 0;
-        padding-bottom: 0; 
     }
 
     .content-wrapper {
-        margin-top: 55vh; /* Pushes content down to the black area */
+        /* Remove the fixed margin-top and use padding to lift it off the bottom edge */
+        margin-top: 0;
+        padding-bottom: 8vh; 
         width: 95%;
         display: flex;
         flex-direction: column;
         align-items: center;
         z-index: 10;
+        /* Optional: adds a slight dark glow behind text for better legibility */
+        background: radial-gradient(circle, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 70%);
     }
 
     #countdown-container {
         display: flex;
         flex-direction: row; 
-        gap: 8px; /* Tight gap to fit 4 columns */
+        gap: 8px;
     }
 
     #countdown-container span {
-        font-size: 1.3rem; /* Compact numbers */
+        font-size: 1.3rem;
         color: #f1c40f;
         font-weight: bold;
         display: block;
@@ -105,7 +111,7 @@ body {
     }
 
     #countdown-container p {
-        font-size: 0.5rem; /* Tiny labels */
+        font-size: 0.5rem;
         color: #ecf0f1;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -116,6 +122,6 @@ body {
         font-size: 1.1rem;
         margin-bottom: 5px;
         color: white;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     }
 }
