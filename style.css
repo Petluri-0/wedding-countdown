@@ -4,7 +4,8 @@ Posted by ModernDesigner, modified by community. See post 'Timeline' for change 
 Retrieved 2026-05-17, License - CC BY-SA 4.0
 */
 
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 #countdown-container{
     display: flex;
@@ -44,7 +45,7 @@ h1 {
     gap: 10px;           /* Controls the specific gap between the title and the clock */
 }
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
 
     /* Combine the tint and the image in ONE line */
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('engagement.jpg');
