@@ -62,12 +62,13 @@ body {
     text-align: center;
 }
 @media (max-width: 600px) {
-    body 
-    {
-        /* Re-confirming these to be safe */
+    body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        
+        /* Change this from flex-end to center */
+        justify-content: center; 
         
         background-image: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 85%), url('engagement-mobile.jpg');
         background-size: 100% auto;
@@ -80,32 +81,17 @@ body {
         width: 100%;
         margin: 0;
 
-        /* This pushes the content-wrapper specifically */
-        justify-content: flex-end; 
-        padding-bottom: 150px; 
+        /* Remove padding-bottom entirely for now to see if it moves */
+        padding-bottom: 0; 
     }
 
-    /* Target the wrapper we made earlier to ensure it's visible */
     .content-wrapper {
-        width: 100%;
+        /* Add a margin-top to manually push it down from the faces */
+        margin-top: 40vh; 
         display: flex;
         flex-direction: column;
         align-items: center;
-        z-index: 10; /* Ensures it sits on top of the background */
     }
-
-    #countdown-container {
-        display: flex;
-        flex-direction: row; 
-        gap: 15px;
-    }
-
-    #countdown-container span {
-        font-size: 1.8rem;
-    }
-
-    h1 {
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-    }
+    
+    /* ... keep the rest of your countdown-container styles ... */
 }
