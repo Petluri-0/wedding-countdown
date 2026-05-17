@@ -81,7 +81,7 @@ body {
 
         /* This pushes the content-wrapper specifically */
         justify-content: flex-end; 
-        padding-bottom: 50px; 
+        padding-bottom: 110px; 
     }
 
     /* Target the wrapper we made earlier to ensure it's visible */
