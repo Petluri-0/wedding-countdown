@@ -73,10 +73,17 @@ body {
     }
     
     body {
-        /* This overwrites the desktop image with the mobile-friendly one */
         background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('engagement-mobile.jpg');
-        background-position: left-center;
-        background-size: cover;
+    
+        /* This forces the photo to be exactly as wide as the phone screen */
+        background-size: 100% auto; 
+    
+        /* This keeps it at the top so it doesn't leave a gap above the heading */
+        background-position: top center;
+    
+        /* Ensure the background color matches the photo's edge so it looks seamless */
+        background-color: #000; 
+        background-repeat: no-repeat;
     }
 
     #countdown-container {
