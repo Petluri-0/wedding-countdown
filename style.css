@@ -61,3 +61,26 @@ body {
     min-height: 100vh;
     text-align: center;
 }
+@media (max-width: 600px) {
+    #countdown-container {
+        /* Change from a row to a column so they stack vertically */
+        flex-direction: column; 
+        gap: 15px;
+        padding: 20px;
+    }
+
+    #countdown-container span {
+        font-size: 2.5rem; /* Shrink the numbers slightly so they fit */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Make the heading smaller for mobile */
+        padding: 0 10px;
+    }
+    
+    body {
+        /* Move the content to the center on mobile if the bottom is too crowded */
+        justify-content: center;
+        padding-bottom: 0;
+    }
+}
