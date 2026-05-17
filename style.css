@@ -5,7 +5,7 @@ Retrieved 2026-05-17, License - CC BY-SA 4.0
 */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
 #countdown-container{
     display: flex;
