@@ -75,25 +75,23 @@ body {
         
         /* Adjust positioning */
         justify-content: flex-end;
-        padding-bottom: 60px; /* Adjust this to move the text up or down */
+        padding-bottom: 20px; /* Adjust this to move the text up or down */
     }
 
     #countdown-container {
         flex-direction: row; 
-        gap: 12px; /* Tighten the gap slightly for mobile */
+        gap: 8px; /* Tighten the gap slightly for mobile */
     }
 
     #countdown-container span {
-        font-size: 1.8rem; /* Smaller font to fit 4 columns on one line */
+        font-size: 1.5rem; /* Smaller font to fit 4 columns on one line */
     }
 
     #countdown-container p {
-        font-size: 0.6rem; /* Smaller labels */
-        letter-spacing: 1px;
+        font-size: 0.5rem; /* Smaller labels */
     }
 
     h1 {
-        font-size: 1.4rem;
-        margin-bottom: 20px;
+        font-size: 1.2rem;
     }
 }
