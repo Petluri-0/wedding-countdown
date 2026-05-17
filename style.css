@@ -79,9 +79,9 @@ body {
     }
     
     body {
-         background-size: contain; /* Shows the whole photo */
-        background-repeat: no-repeat;
-        background-color: #000; /* Adds black bars top/bottom if needed */
-        background-position: center;
+        /* Move the content to the center on mobile if the bottom is too crowded */
+        background-position: 41% center;
+        justify-content: center;
+        padding-bottom: 0;
     }
 }
