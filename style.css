@@ -80,6 +80,7 @@ body {
     
     body {
         /* Move the content to the center on mobile if the bottom is too crowded */
+        background-position: left center;
         justify-content: center;
         padding-bottom: 0;
     }
