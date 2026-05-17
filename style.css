@@ -62,13 +62,7 @@ body {
     text-align: center;
 }
 @media (max-width: 600px) {
-    #countdown-container {
-        /* Change from a row to a column so they stack vertically */
-        flex-direction: column; 
-        gap: 15px;
-        padding: 20px;
-    }
-
+  
     #countdown-container span {
         font-size: 2.5rem; /* Shrink the numbers slightly so they fit */
     }
@@ -79,9 +73,14 @@ body {
     }
     
     body {
-        /* Move the content to the center on mobile if the bottom is too crowded */
-        background-position: 41% center;
-        justify-content: center;
-        padding-bottom: 0;
+        /* This overwrites the desktop image with the mobile-friendly one */
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('engagement-mobile.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    #countdown-container {
+        flex-direction: column;
+        gap: 15px;
     }
 }
