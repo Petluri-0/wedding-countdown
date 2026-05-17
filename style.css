@@ -1,0 +1,63 @@
+/*
+Source - https://stackoverflow.com/a/14676665
+Posted by ModernDesigner, modified by community. See post 'Timeline' for change history
+Retrieved 2026-05-17, License - CC BY-SA 4.0
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Playfair+Display&display=swap');
+
+#countdown-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 30px;
+    
+}
+#countdown-container span {
+    color: #f1c40f; /* A nice golden yellow */
+    font-size: 4.5rem; /* Let's make them even bigger! */
+    font-weight: bold;
+    display: block;
+    
+    /* The "Glow" Effect (Text Shadow) */
+    text-shadow: 0 0 10px rgba(241, 196, 15, 0.5), 
+                 0 0 20px rgba(241, 196, 15, 0.3);
+}
+#countdown-container p {
+    color: #ecf0f1; /* Light silver/white */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 
+                 0 0 15px rgba(255, 255, 255, 0.4);
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Keeps heading and clock centered horizontally */
+    gap: 10px;           /* Controls the specific gap between the title and the clock */
+}
+body {
+    font-family: 'Playfair Display', serif;
+
+    /* Combine the tint and the image in ONE line */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('engagement.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    color: white; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
