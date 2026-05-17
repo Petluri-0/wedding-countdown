@@ -4,7 +4,7 @@ Posted by ModernDesigner, modified by community. See post 'Timeline' for change 
 Retrieved 2026-05-17, License - CC BY-SA 4.0
 */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 
 #countdown-container{
     display: flex;
@@ -86,7 +86,7 @@ body {
     .content-wrapper {
         /* Remove the fixed margin-top and use padding to lift it off the bottom edge */
         margin-top: 0;
-        padding-bottom: 8vh; 
+        padding-bottom: 12vh; 
         width: 95%;
         display: flex;
         flex-direction: column;
@@ -103,7 +103,8 @@ body {
     }
 
     #countdown-container span {
-        font-size: 1.3rem;
+        line-height: 1;
+        font-size: 1.5rem;
         color: #f1c40f;
         font-weight: bold;
         display: block;
@@ -111,7 +112,8 @@ body {
     }
 
     #countdown-container p {
-        font-size: 0.5rem;
+        margin: 2px 0 0 0;
+        font-size: 0.6rem;
         color: #ecf0f1;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -119,9 +121,17 @@ body {
     }
 
     h1 {
-        font-size: 1.1rem;
-        margin-bottom: 5px;
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
         color: white;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+    #countdown-container > div {
+
+        flex: 1; /* Makes all 4 columns exactly the same width */
+        min-width: 60px;
+        text-align: center;
     }
 }
